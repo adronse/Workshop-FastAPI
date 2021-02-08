@@ -75,18 +75,10 @@ Your API almost always has to send a response body. But clients don't necessaril
 To declare a request body, you use Pydantic models with all their power and benefits
 See your file in step4 for futhermore instructions.
 
-## Step 4 : It gets harder
+## Step 5 : It gets harder
 
 Your goal will be to create a new user into firebase, dont worry you wont have to setup anything 
-
-
-
-Until now, you've only worked on your local ethereum network.
-Your smart contract is fully tested and ready to be deployed on the real blockchain !
-
-But deploying a smart contract is done by sending a transaction, and you probably don't want to pay real money to accomplish this step wright ?
-
-This is why testnet are useful :wink:, they behave the same way as the mainnet does, but their ether value is null. 
+Futhermore instructions in the step5 folder
 
 So first, you need to install Metamask extension on your browser.
 Follow the steps required and don't forget to set the network to be the Ropsten Test Network.
