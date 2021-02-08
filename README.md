@@ -39,7 +39,7 @@ It's all based on standard Python 3.6 type declarations (thanks to Pydantic). No
 
 FastAPI uses the ASGI server implementation you can see that like the as the "node server".
 
-# To launch the server
+### To launch the server
 
 - cd step1/
 
