@@ -80,19 +80,8 @@ See your file in step4 for futhermore instructions.
 Your goal will be to create a new user into firebase, dont worry you wont have to setup anything 
 Futhermore instructions in the step5 folder
 
-So first, you need to install Metamask extension on your browser.
-Follow the steps required and don't forget to set the network to be the Ropsten Test Network.
-Then, go to [this faucet](https://faucet.dimensions.network/) and paste your wallet account address to get 5 ether.
-
-You also need a new provider, since ganache only works locally. You will use the `HDWalletProvider` one provided in the `deploy.js` file.
-Because you are sending a transaction to the real network, you have to know the endpoint of an ethereum node.
-
-Infura can provide this information. As we support decentralisation of the Ethereum blockchain here is an endpoint you can use :
-
-https://ropsten.infura.io/v3/510289ba8f254e46891aaa84a718ddd9
-
-Feel free to use the code you've written during tests to deploy and interact with the contract on the Ropsten Network.
+To know if you create a new user correctly ask me to look if the user was created.
 
 ### Authors
 
-[Luca Georges Francois](https://github.com/PtitLuca)
+[Adrien Ronse](https://github.com/adronse)
