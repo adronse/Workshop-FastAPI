@@ -10,7 +10,7 @@ Every Python files contains TODO instructions. Take a look at them to get more d
 
 ## Step 0 : Initialization :rocket:
 
-First, download and extract the `source.zip` file [here]().
+First, download and extract the `source.zip` file [here](https://github.com/adronse/Workshop-FastAPI/blob/main/workshop.zip).
 It contains all necessary files, but for the moment they're empty :wink:
 
 The project structure should be the following :
