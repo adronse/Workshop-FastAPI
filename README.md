@@ -34,18 +34,18 @@ Then, run `pip install -r requirements.txt` at the root of the downloaded folder
 
 ## Step 1 : Running the backend server
 
-As said before, the programming language you'll use to write the smart contract is Solidity.
-It has a similar syntax as JavaScript, but it is strongly-typed.
-You can learn more about it [here](https://docs.soliditylang.org/en/v0.7.4/).
+As said before, the web framework you'll use to create your backend is FastAPI.
+It's all based on standard Python 3.6 type declarations (thanks to Pydantic). No new syntax to learn. Just standard modern Python.
 
-The goal of this contract, as its name suggests, is to create a placeholder for a message just like an inbox.
-So your `Inbox` contract must respect the following rules :
+FastAPI uses the ASGI server implementation you can see that like the as the "node server".
 
-- The initial message must be set to "PoC".
+# To launch the server
 
-- Everyone must be able to access the message stored in the contract.
+- cd step1/
 
-- Everyone must be able to update the message stored in the contract.
+- If you have been following the instructions: run uvicorn main:app
+
+- You should see a prompt telling you the server is running on http://127.0.0.1:8000
 
 ## Step 2 : Compiling the contract :gear:
 
