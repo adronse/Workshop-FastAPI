@@ -47,6 +47,8 @@ FastAPI uses the ASGI server implementation you can see that like the as the "no
 
 - You should see a prompt telling you the server is running on http://127.0.0.1:8000
 
+- Go to http://127.0.0.1:8000/docs you should an awesome interface with your different endpoints ! (You should have only one tho)
+
 ## Step 2 : Greet user :gear:
 
 Now that your server is up and running lets define some controllers or routes, this is basically the endpoints of your server, lets say you have a mobile app or a web server. Those endpoints will be called to retrieve some data like fetching a database, authenticate a user etc..
