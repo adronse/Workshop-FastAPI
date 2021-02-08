@@ -1,43 +1,38 @@
-# Workshop 1 - Solidity & Smart Contract :open_book:
+# Workshop 1 - FastAPI :open_book:
 
-During this workshop, you will create a smart contract that can run onto the Ethereum Virtual Machine.
-You'll achieve this in 4 steps : write, compile, test & deploy the contract.
+During this workshop, you will create a simple backend using the python web framework FastAPI
 
-A smart contract is an application that can run on a blockchain.
-Once you've written a smart contract on a blockchain, the same behaviour as with the transactions applies :
-you can not update it.
-The most popular blockchain that supports smart contract is Ethereum, this is the main reason we are using this particular one.
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
 Please make sure to read each step carefully, as very useful links are given with the instructions.
 
-Every JavaScript files contains TODO instructions. Take a look at them to get more details and context about the task.
+Every Python files contains TODO instructions. Take a look at them to get more details and context about the task.
 
 ## Step 0 : Initialization :rocket:
 
-First, download and extract the `source.zip` file [here](https://github.com/PoCInnovation/Workshops/blob/master/p2p/1.Solidity/src/source.zip).
+First, download and extract the `source.zip` file [here]().
 It contains all necessary files, but for the moment they're empty :wink:
 
 The project structure should be the following :
 
 ```
 .
-├── compile.js
-├── contracts
-│   └── Inbox.sol
-├── deploy.js
-├── interact.js
-├── out
-│   ├── abi.json
-│   └── bytecode.json
-├── package.json
-└── test
-    └── inbox.test.js
+├── requirements.txt
+├── step1
+│   └── main.py
+├── step2
+├── step3
+├── step4
+└── step5
 
 ```
 
-Then, run `npm install` at the root of the downloaded folder.
+At the root directory, create a virtual environment like so:
+   - python3 -m venv (NAME_ENV)
+   - source (NAME_ENV)/bin/activate
+Then, run `pip install -r requirements.txt` at the root of the downloaded folder.
 
-## Step 1 : Solidity & the contract :memo:
+## Step 1 : Running the backend server
 
 As said before, the programming language you'll use to write the smart contract is Solidity.
 It has a similar syntax as JavaScript, but it is strongly-typed.
