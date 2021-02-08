@@ -43,11 +43,13 @@ FastAPI uses the ASGI server implementation you can see that like the as the "no
 
 - cd step1/
 
-- If you have been following the instructions: run uvicorn main:app
+- If you have been following the instructions run: uvicorn main:app
 
 - You should see a prompt telling you the server is running on http://127.0.0.1:8000
 
-- Go to http://127.0.0.1:8000/docs you should an awesome interface with your different endpoints ! (You should have only one tho)
+- Go to http://127.0.0.1:8000/docs you should see an awesome interface with your different endpoints ! (You should have only one tho)
+
+- In the next steps, make sure to launch the server in the directories (To test step2: cd into step2 then uvicorn)
 
 ## Step 2 : Greet user :gear:
 
@@ -59,53 +61,24 @@ Use the example in the step1 to return a response body that says: "Hello, [Your 
 It is quite common for website to have parameters in the url, like epitech.intra/user/johndoe
 
 Lets define an endpoint with a path parameter.
+There is a hint in your files, you should find out easily.
 
 
-Okay, time to test !
+## Step 4 : Endpoint with a request body
 
-- The first thing you want to test is that the contract deployment works correctly.
-    For this part, you must know that deploying a contract is just a method from the `Contract` subclass of the `Web3` class.
-    A contract must be deployed by an account. Hopefully, Ganache creates a list of 10 accounts whenever it is loaded.
+When you need to send data from a client (let's say, a browser) to your API, you send it as a request body.
 
-- Then, test all of your functions.
-    Note that when you declare a `public` variable in Solidity, the EVM automatically creates an accessor for this variable (a `call`).
-    Whenever you call a function that modifies the contract state (i.e. stored variables), you must send a transaction to the targeted function.
-    You must test the following features :
-  
-    - The contract has been deployed properly
-    - The initial message has been set to "PoC"
-    - Every account can access the message
-    - Every account can set a new message
-    
-- Here is an example on how you can use mocha : 
-    ```javascript
-    const assert = require('assert');
-    
-    function add(a, b) {
-        return a + b;
-    }
-  
-    describe('Add', () => {
-        it('should add two numbers', () => {
-            let a = 20;
-            let b = 22;
-  
-            assert.equal(add(a, b), 42);
-        });
-    });
-    ```
-    If you run `npm run tests`, you should see the test passing.
-    
-    Check [this](https://web3js.readthedocs.io/en/v1.3.0/web3-eth-contract.html#methods-mymethod-call) link for more information about how you can call your contract functions.
+A request body is data sent by the client to your API. A response body is the data your API sends to the client.
 
-## Step 4 : Time to deploy :outbox_tray:
+Your API almost always has to send a response body. But clients don't necessarily need to send request bodies all the time.
 
-Until now, you've only worked on your local ethereum network.
-Your smart contract is fully tested and ready to be deployed on the real blockchain !
+To declare a request body, you use Pydantic models with all their power and benefits
+See your file in step4 for futhermore instructions.
 
-But deploying a smart contract is done by sending a transaction, and you probably don't want to pay real money to accomplish this step wright ?
+## Step 5 : It gets harder
 
-This is why testnet are useful :wink:, they behave the same way as the mainnet does, but their ether value is null. 
+Your goal will be to create a new user into firebase, dont worry you wont have to setup anything 
+Futhermore instructions in the step5 folder
 
 So first, you need to install Metamask extension on your browser.
 Follow the steps required and don't forget to set the network to be the Ropsten Test Network.
