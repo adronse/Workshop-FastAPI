@@ -47,7 +47,7 @@ FastAPI uses the ASGI server implementation you can see that like the as the "no
 
 - You should see a prompt telling you the server is running on http://127.0.0.1:8000
 
-- Go to http://127.0.0.1:8000/docs you should an awesome interface with your different endpoints ! (You should have only one tho)
+- Go to http://127.0.0.1:8000/docs you should see an awesome interface with your different endpoints ! (You should have only one tho)
 
 ## Step 2 : Greet user :gear:
 
