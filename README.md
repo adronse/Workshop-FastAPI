@@ -47,42 +47,17 @@ FastAPI uses the ASGI server implementation you can see that like the as the "no
 
 - You should see a prompt telling you the server is running on http://127.0.0.1:8000
 
-## Step 2 : Compiling the contract :gear:
+## Step 2 : Greet user :gear:
 
-Now that you've written the contract, you need to compile it !
-The compiler used is `solc`, and has already been included to your `package.json` dependencies file.
+Now that your server is up and running lets define some controllers or routes, this is basically the endpoints of your server, lets say you have a mobile app or a web server. Those endpoints will be called to retrieve some data like fetching a database, authenticate a user etc..
+Use the example in the step1 to return a response body that says: "Hello, [Your name]"
 
-You need to do the following steps to get the bytecode & ABI (Application Binary Interface) of the contract :
+## Step 3 : Endpoint with path parameters :test_tube:
 
-- Retrieve the file content. The solc compiler obviously needs the contract's code to compile it, but instead of juste copy/paste the code for the next step you may wan't to automate this process by reading the file dynamically. 
+It is quite common for website to have parameters in the url, like epitech.intra/user/johndoe
 
-- Give the content to the compiler. Note that the `compile.js` file already contains a variable, but the `sources['Inbox.sol']` field is empty.
+Lets define an endpoint with a path parameter.
 
-- Compile and extract the bytecode & ABI from the result (check [this](https://github.com/ethereum/solc-js) out :wink:).
-
-- Write the bytecode & ABI to the corresponding file in the `out` folder.
-
-As you've probably guessed, the bytecode contains a compiled version of your contract that will be executed by the EVM.
-You will use the ABI to interact with the contract.
-
-## Step 3 : Tests using mocha & assert :test_tube:
-
-Time to test !
-The tests are very important while writing a smart contract, because once they're deployed on a real blockchain, you can not update or delete it.
-So make sure that everything is working as expected before deploying a contract.
-
-You'll use mocha as a testing framework and chai as an assertion library.
-
-Two more things before you start :
-
-- If you've looked at the packages in the dependencies, you probably saw `ganache`.
-    Ganache will launch a virtual Ethereum network on your local environment.
-    There is also a gui version available [here](https://www.trufflesuite.com/ganache).
-
-- The ABI is an interface between you (the developer) and the EVM.
-    If you take a look at its content, and it's highly recommended, you'll see your contract functions name & variables.
-    Web3, an API developed by the Ethereum foundation, is responsible for connecting your javascript code with the contract bytecode actually running on an Ethereum node.
-    Web3 requires a provider to work properly. We'll use the ganache provider for this workshop, but in the real world it could be the [Metamask](https://metamask.io/) one.
 
 Okay, time to test !
 
